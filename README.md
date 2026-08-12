@@ -56,14 +56,3 @@
 
 외부 의존성이 없으므로 C++11 이상을 지원하는 컴파일러에서 바로 빌드할 수 있습니다. 
 > ⚠️ **주의:** 순수 CPU 기반의 무거운 `for` 문 연산이 진행되므로 컴파일러 최적화 옵션(`-O2` 또는 `-O3`)을 반드시 활성화해야 합니다.
-
-```bash
-# 1. 저장소 클론
-$ git clone [https://github.com/hakyaung/PytoCpp-CNN.git](https://github.com/hakyaung/PytoCpp-CNN.git)
-$ cd PytoCpp-CNN
-
-# 2. 최적화 플래그를 적용하여 빌드 (Linux/Mac 기준)
-$ g++ -O2 -std=c++11 src/*.cpp -o train_deepnet
-
-# 3. 학습 실행
-$ ./train_deepnet
